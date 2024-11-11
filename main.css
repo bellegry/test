@@ -1,0 +1,89 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+header {
+  .gnb {
+    width: 100%;
+    height: 72px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      padding: 10px 30px;
+      color: mediumslateblue;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      li {
+        padding: 10px 5px;
+      }
+      li a {
+        color: violet;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.snb {
+  width: 100%;
+  height: 160px;
+  background: url(https://png.pngtree.com/thumb_back/fw800/background/20231219/pngtree-pink-pastel-background-with-pink-aesthetic-sky-image_15522922.png)
+      no-repeat center center,
+    rgba(124, 104, 238, 0.2);
+  background-blend-mode: multiply;
+  background-size: cover;
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  ul {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(124, 104, 238);
+    li {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      justify-content: center;
+      a {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        color: rgb(216, 205, 255);
+      }
+      &:not(:last-child) {
+        color: rgb(216, 205, 255);
+        border-right: 1px solid rgb(216, 205, 255);
+      }
+    }
+  }
+}
+.fixed {
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+}
+.main {
+  background-color: mediumaquamarine;
+  width: 100%;
+  height: 2000px;
+  z-index: -1;
+  padding-top: 50px;
+}
